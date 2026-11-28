@@ -1016,6 +1016,43 @@
       ]
     },
     {
+      "id": "custom-ml-model-inference",
+      "category": "performance",
+      "title": "Running custom machine learning models in the browser",
+      "description": "Run custom machine learning models, such as classifiers, small vision or audio networks, or similarity scoring, directly in the browser on the user's device.",
+      "features": [
+        "webgpu",
+        "wasm",
+        "wasm-simd",
+        "float16array",
+        "js-modules-workers"
+      ],
+      "demos": [
+        {
+          "id": "demo",
+          "path": "guides/performance/custom-ml-model-inference/demo.html"
+        }
+      ]
+    },
+    {
+      "id": "data-parallel-computation",
+      "category": "performance",
+      "title": "Running parallel computations on the GPU",
+      "description": "Speed up large data-parallel calculations, such as physics simulations, matrix math, or statistical models, on the user's device.",
+      "features": [
+        "webgpu",
+        "js-modules-workers",
+        "wasm",
+        "wasm-simd"
+      ],
+      "demos": [
+        {
+          "id": "demo",
+          "path": "guides/performance/data-parallel-computation/demo.html"
+        }
+      ]
+    },
+    {
       "id": "defer-rendering-heavy-content",
       "category": "performance",
       "title": "Defer rendering heavy content",
@@ -1276,6 +1313,26 @@
         {
           "id": "negative-demo",
           "path": "guides/performance/interactions-in-complex-layouts/negative-demo.html"
+        }
+      ]
+    },
+    {
+      "id": "large-scene-rendering",
+      "category": "performance",
+      "title": "Rendering scenes with thousands of different objects",
+      "description": "Render scenes with thousands of different objects, such as CAD assemblies, multi-layer design canvases, or large 3D worlds whose visible objects change as the camera moves, at high frame rates.",
+      "features": [
+        "webgpu",
+        "webgl2",
+        "webgl-multi-draw",
+        "offscreen-canvas",
+        "canvas-2d",
+        "prefers-reduced-motion"
+      ],
+      "demos": [
+        {
+          "id": "demo",
+          "path": "guides/performance/large-scene-rendering/demo.html"
         }
       ]
     },
@@ -2881,6 +2938,29 @@
       ]
     },
     {
+      "id": "context-menu",
+      "category": "ui-components",
+      "title": "Context Menu",
+      "description": "Build a context menu component that displays a list of options or actions for interacting with an element or specific context (e.g. by right clicking).",
+      "features": [
+        "popover",
+        "anchor-positioning",
+        "focusgroup",
+        "invoker-commands",
+        "toggleevent-source"
+      ],
+      "demos": [
+        {
+          "id": "demo",
+          "path": "guides/ui-components/context-menu/demo.html"
+        },
+        {
+          "id": "demo-modern",
+          "path": "guides/ui-components/context-menu/demo-modern.html"
+        }
+      ]
+    },
+    {
       "id": "copy-button",
       "category": "ui-components",
       "title": "Copy button",
@@ -2949,6 +3029,7 @@
       "features": [
         "popover",
         "invoker-commands",
+        "toggleevent-source",
         "anchor-positioning",
         "focusgroup",
         "has",
@@ -3636,6 +3717,7 @@
     "blocking-render",
     "border-shape",
     "calc-size",
+    "canvas-2d",
     "canvas-html",
     "cascade-layers",
     "clip-path",
@@ -3669,6 +3751,7 @@
     "fetchlater",
     "field-sizing",
     "file-selector-button",
+    "float16array",
     "focus-visible",
     "focus-within",
     "focusgroup",
@@ -3697,6 +3780,7 @@
     "intersection-observer",
     "intl-duration-format",
     "invoker-commands",
+    "js-modules-workers",
     "keyboard-events",
     "languagedetector",
     "languagemodel",
@@ -3722,6 +3806,7 @@
     "navigator-install",
     "nesting",
     "not",
+    "offscreen-canvas",
     "origin",
     "overflow-clip",
     "overflow-clip-margin",
@@ -3796,6 +3881,7 @@
     "tmp-long-animation-frames-style-layout",
     "tmp-text-decoration-inset",
     "tmp-webcrypto-modern-algos",
+    "toggleevent-source",
     "top-level-await",
     "touch-action",
     "transition-behavior",
@@ -3813,10 +3899,15 @@
     "view-transitions",
     "view-transitions-element-scoped",
     "viewport-unit-variants",
+    "wasm",
+    "wasm-simd",
     "web-animations",
     "web-cryptography",
     "web-otp",
     "webauthn",
-    "webauthn-signals"
+    "webauthn-signals",
+    "webgl-multi-draw",
+    "webgl2",
+    "webgpu"
   ]
 }
